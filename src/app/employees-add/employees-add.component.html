@@ -1,0 +1,62 @@
+<form
+class = "employee-form"
+name = "add-form"
+#f = "ngForm"
+novalidate
+(ngSubmit) = "addEmployee()">
+
+  <div class="add-group">
+    <label for="inputUsername"
+           class="form-label">Username</label>
+    <input type="username"
+           class="form-control"
+           id="imputUsername"
+           placeholder="Write here"
+           [ngModel]="model.username">
+  </div>
+
+  <div class="add-group">
+    <label for="inputFirstName"
+           class="form-label">First name</label>
+    <input type="firstName"
+           class="form-control"
+           id="inputFirstName"
+           placeholder="Write here"
+           [ngModel]="model.firstName">
+  </div>
+
+  <div class="add-group">
+    <label for="inputLastName"
+    class="form-label">Last name</label>
+    <input type="lastName"
+          class="form-control"
+           id="inputLastName"
+           placeholder="Write here"
+           [ngModel]="model.lastName">
+  </div>
+
+  <div class="add-group">
+    <label for="inputEmail"
+           class="form-label">Email</label>
+    <input type="email"
+           class="form-control"
+           id="inputEmail"
+           placeholder="Write here"
+           [ngModel]="model.email">
+  </div>
+
+  <div class="add-group">
+    <label for="inputPassword"
+           class="form-label">Password</label>
+    <input type="password"
+           class="form-control"
+           id="inputPassword"
+           placeholder="Write here"
+           [ngModel]="model.password">
+    <div id="message"
+         class="form-text">We'll never share your personal data with anyone else!</div>
+  </div>
+
+  <button type="submit"
+          class="primary button">Submit</button>
+</form>

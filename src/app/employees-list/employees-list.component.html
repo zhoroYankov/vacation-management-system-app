@@ -1,0 +1,29 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Username</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Role</th>
+          <th scope="col">Vacation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of allEmployees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.username }}</td>
+          <td>{{ employee.firstName }}</td>
+          <td>{{ employee.lastName }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.role }}</td>
+          <td>{{ employee.vacation }}</td>
+          <td><a href="mailto:{{ employee.email }}">{{ employee.email }}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
